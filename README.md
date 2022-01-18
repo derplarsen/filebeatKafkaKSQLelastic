@@ -5,7 +5,7 @@ This repository is to show how to output filebeat to kafka, instantiate a schema
 
 ### Run Kafka / Connect / ksqlDB / Elasticsearch 
 
-The easiest way to do this is run it via kafka-docker-playground.
+The fastest/easiest way to do this is run it via `kafka-docker-playground`! 
 
  1. Make sure you don't have any Confluent Platform components currently running.
  2. Clone this: https://github.com/vdesabou/kafka-docker-playground
