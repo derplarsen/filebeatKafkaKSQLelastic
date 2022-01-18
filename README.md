@@ -213,6 +213,6 @@ Then scroll all the way down to hit Next, then Launch, and you should see the "e
 
 ### Check to see the new index is created with the topic name
 
-### >>> Stop kafka-docker-playground <<<
+### >>> WHEN DONE: Stop kafka-docker-playground <<<
 This part is simple - just ctrl+c out of the docker output and run the following from the same directory you started in:
 `./stop.sh`
