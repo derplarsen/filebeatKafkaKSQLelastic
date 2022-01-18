@@ -201,7 +201,7 @@ from FILEBEAT_STREAM_INIT;
 
 In the above statement, note that the first field "MESSAGE" is just what it is - a single arbitrary field. The rest of them are STRUCTs, nested JSON, so I can flatten by traversing the hierarchy to get the fields I want with the arrow notation. 
 
-(See ksqlDB.io for usage documentation)
+(See https://ksqlDB.io for usage documentation)
 
 Because this is a CSAS statement (a CTAS would do the same), an output topic is created where the results get produced. Go to **FILEBEAT_STREAM_OUTPUT** and inspect the records.  You can also just query it in ksqlDB like "select * from FILEBEAT_STREAM_OUTPUT emit changes;" and as long as "Earliest" is chosen for for the auto.offset.reset you should see all the data from the beginning of Kafka receiving data from Filebeat.
 
