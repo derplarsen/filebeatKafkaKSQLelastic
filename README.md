@@ -1,7 +1,7 @@
 
 # Overview
 
-This repository is to show how to output filebeat to kafka, instantiate a schema in Schema Registry, flatten the schema in ksqlDB and save into another kafka topic as AVRO format, then output to Elasticsearch.
+This repository is to show how to output filebeat to kafka, instantiate a schema in Schema Registry, flatten the schema in ksqlDB and save into another kafka topic optimized for AVRO format, then output to Elasticsearch.
 
 ### Run Kafka / Connect / ksqlDB / Elasticsearch 
 
