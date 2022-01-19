@@ -15,7 +15,7 @@ The fastest/easiest way to do this is run it via `kafka-docker-playground`!
 ### Set up Filebeat
 
 1. Install filebeat and modify filebeat.yml in the appropriate location.
-2. In "*filebeat.inputs:*" section, disable **type: log** (this option will be deprecated in favor of filestream)
+2. In "*filebeat.inputs:*" section, disable **type: log** *(this option will be deprecated in favor of filestream)*
 3. In "*filebeat.inputs:*" section, enable **type: filestream** and set it to process whatever log file you want, I used `/var/log/system.log`
 4. In outputs, comment out Elasticsearch and any other output
 5. add the following output:
