@@ -35,7 +35,7 @@ The fastest/easiest way to do this is run it via `kafka-docker-playground`!
 7. Now if you open the Confluent Control Center at `localhost:9021` you should see a new topic that got automatically created called **filebeat_in** (per the topic property in the filebeat configuration), take a look at the data by setting offset to 0 and inspect the data in plain JSON using the button with 4 solid lines on the top right of the data output.
 
 ### How do I sink this data to Elastic?
-This docker playground instance does send sample data into a topic which gets sinked down into elasticsearch using the Elasticsearch Sink Connector, but we want to sink down to a *new* index with *new* data.
+This docker playground instance by default sends sample data into a topic which gets sinked down into elasticsearch using the Elasticsearch Sink Connector, but we want to sink down to a *new* index with *new* data.
 
 Now that you've got the json data in the filebeat_in topic, we could try to add that topic in the connector configuration and restart the connector, but the problem is that by default it's going to fail because it doesn't have a known schema. It is possible work around this with an additional configuration made, but if we know the schema we can do stream processing to it! 
 
